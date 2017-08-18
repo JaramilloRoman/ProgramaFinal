@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="589.0" prefWidth="721.0" style="-fx-background-color: beige;">
+         <children>
+            <TextField alignment="CENTER" editable="false" layoutX="19.0" layoutY="23.0" prefHeight="102.0" prefWidth="691.0" style="-fx-background-color: beige;" text="Piedra Papel o Tijera">
+               <font>
+                  <Font name="Cooper Black" size="55.0" />
+               </font>
+            </TextField>
+            <Button disable="false" layoutX="56.0" layoutY="146.0" mnemonicParsing="false" onAction="#piedra" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #ffdead; -fx-border-color: black; -fx-border-width: 5;">
+               <graphic>
+                  <ImageView fx:id="imagenpiedra" fitHeight="95.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../imagenes/piedra.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fx:id="jugador" fitHeight="150.0" fitWidth="150.0" layoutX="202.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="computadora" fitHeight="150.0" fitWidth="150.0" layoutX="525.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="385.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../imagenes/black-crossed-swords-md.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="player3" alignment="CENTER" editable="false" layoutX="339.0" layoutY="501.0" prefHeight="40.0" prefWidth="40.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-background-color: lightskyblue;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ganaste" alignment="CENTER" editable="false" layoutX="271.0" layoutY="441.0" style="-fx-background-color: beige;">
+               <font>
+                  <Font name="Cooper Black" size="24.0" />
+               </font>
+            </TextField>
+            <Button disable="false" layoutX="55.0" layoutY="279.0" mnemonicParsing="false" onAction="#papel" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #ffdead; -fx-border-color: black; -fx-border-width: 5;">
+               <graphic>
+                  <ImageView fx:id="imagenpapel" fitHeight="95.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" scaleZ="0.0">
+                     <image>
+                        <Image url="@../imagenes/papel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button disable="false" layoutX="56.0" layoutY="411.0" mnemonicParsing="false" onAction="#tijera" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #ffdead; -fx-border-color: black; -fx-border-width: 5;">
+               <graphic>
+                  <ImageView fx:id="imagentijera" fitHeight="95.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" scaleZ="2.0">
+                     <image>
+                        <Image url="@../imagenes/tijera.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="399.0" layoutY="490.0" mnemonicParsing="false" onAction="#reset" prefHeight="27.0" prefWidth="27.0" style="-fx-background-color: yellow; -fx-border-color: black; -fx-border-width: 3;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../imagenes/icons8-Reset-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TextField fx:id="player2" alignment="CENTER" editable="false" layoutX="290.0" layoutY="501.0" prefHeight="40.0" prefWidth="40.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-background-color: lightskyblue;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="player1" alignment="CENTER" editable="false" layoutX="242.0" layoutY="501.0" prefHeight="40.0" prefWidth="40.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-background-color: lightskyblue;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="computadora3" alignment="CENTER" editable="false" layoutX="494.0" layoutY="501.0" prefHeight="40.0" prefWidth="40.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-background-color: salmon;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="computadora2" alignment="CENTER" editable="false" layoutX="542.0" layoutY="501.0" prefHeight="40.0" prefWidth="40.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-background-color: salmon;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="computadora1" alignment="CENTER" editable="false" layoutX="589.0" layoutY="501.0" prefHeight="40.0" prefWidth="40.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-background-color: salmon;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="fin" alignment="CENTER" editable="false" layoutX="13.0" layoutY="251.0" prefHeight="107.0" prefWidth="691.0" style="-fx-border-color: black; -fx-border-width: 10; -fx-background-color: palegreen;" visible="false">
+               <font>
+                  <Font name="Cooper Black" size="47.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
